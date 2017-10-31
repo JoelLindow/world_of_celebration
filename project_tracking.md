@@ -31,5 +31,5 @@ I opted to use this as a tracking system, rather than use Waffle.io or Pivotal T
   - (Oct 30th 2017 - 8:55PM)
 + Install RSpec
   - (Oct 31st 2017 - 1:14PM)
-+ Add Testing for User can view all countries (index) with all table Database
++ Add Feature Testing for User can view all countries (index) with all table Database
   - (Oct 31st 2017 - 2:19PM)
