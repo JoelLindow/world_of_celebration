@@ -13,7 +13,10 @@ describe "user visits /countries page" do
       flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-Japan.png"
     )
 
-    visit country_path(country1)
+    visit countries_path
+    expect(current_path).to eq("/countries")
+
+    find("#{country1.name}").click
     expect(current_path).to eq("/countries/#{country1.id}")
 
     expect(page).to have_content("#{country1.name}")
