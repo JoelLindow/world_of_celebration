@@ -16,7 +16,7 @@ describe "user visits /countries page" do
     visit countries_path
     expect(current_path).to eq("/countries")
 
-    find("#{country1.name}").click
+    click_on("#{country1.name}")
     expect(current_path).to eq("/countries/#{country1.id}")
 
     expect(page).to have_content("#{country1.name}")

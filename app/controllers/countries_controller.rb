@@ -5,6 +5,7 @@ class CountriesController < ApplicationController
   end
 
   def show
+    binding.pry
     @country = Country.find(params[:id])
   end
 
