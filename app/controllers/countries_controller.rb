@@ -4,4 +4,8 @@ class CountriesController < ApplicationController
     @countries = Country.all
   end
 
+  def show
+    
+  end
+
 end
