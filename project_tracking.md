@@ -4,7 +4,11 @@ I opted to use this as a tracking system, rather than use Waffle.io or Pivotal T
 
 ### Tasks to Be Completed - MUST DO
 
++ Add Testing to create the following Country Functionality:
+
 + Create Database Migration for Table for Holidays
+  - User can see individual country with relevant data and Holidays returned from HolidayAPI 2016 calendar data
+  - User can go to wikipedia page about specific holidays in specific country by using table date to make a query against wikipedia's search
 + Create Seed File to populate Holidays Table with:
   - Long hand Country Name
   - Short hand Country Name (abbreviation)
@@ -27,7 +31,5 @@ I opted to use this as a tracking system, rather than use Waffle.io or Pivotal T
   - (Oct 30th 2017 - 8:55PM)
 + Install RSpec
   - (Oct 31st 2017 - 1:14PM)
-+ Add Testing to create the following Country Functionality:
-    - User can view all countries (index) with all table Database
-    - User can see individual country with relevant data and Holidays returned from HolidayAPI 2016 calendar data
-    - User can go to wikipedia page about specific holidays in specific country by using table date to make a query against wikipedia's search
++ Add Testing for User can view all countries (index) with all table Database
+  - (Oct 31st 2017 - 2:19PM)
