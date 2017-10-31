@@ -33,3 +33,5 @@ I opted to use this as a tracking system, rather than use Waffle.io or Pivotal T
   - (Oct 31st 2017 - 1:14PM)
 + Add Feature Testing for User can view all countries (index) with all table Database
   - (Oct 31st 2017 - 2:19PM)
++ Completed Feature Testing for User can view all countries (index) with all table Database
+  - (Oct 31st 2017 - 2:50PM)
