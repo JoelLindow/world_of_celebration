@@ -1,7 +1,6 @@
 <% @countries.each do |country| %>
 <div class="<%= "country_" + country.abbreviation %>">
-
-<img src="<%= country.flag_img_url %>" alt="<%= "#{country.name} flag" %>">
-<h5 class="name"><%= country.name %></h5>
+  <img src="<%= country.flag_img_url %>" alt="<%= "#{country.name} flag" %>">
+  <h5 class="name"><%= country.name %></h5>
 </div>
 <% end %>
