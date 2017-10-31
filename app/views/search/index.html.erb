@@ -1,9 +1,0 @@
-
-<ul>
-  <%= form_tag :search, method: :get, class: "form-inline" do %>
-  <div class="form-group search-field">
-    <%= select_tag :country, options_for_select(countries) %>
-    <%= submit_tag "See Country's Holidays", class: "btn btn-primary" %>
-  </div>
-  <% end %>
-</ul>
