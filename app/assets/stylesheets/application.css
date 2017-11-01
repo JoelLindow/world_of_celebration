@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+body {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.index_flag {
+  width: 200px;
+  height: 130px;
+}
