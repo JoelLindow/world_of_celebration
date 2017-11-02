@@ -12,7 +12,7 @@ class CountriesController < ApplicationController
 
     json_holidays = JSON.parse(response.body, symbolize_names: true)[:holidays]
 
-    @holidays = json_holidays.each do |holiday|
+    @holidays = json_holidays.map do |holiday|
       Holiday.new(holiday)
     end
   end

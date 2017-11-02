@@ -1,4 +1,19 @@
-<h3>Holidays of <%= @country.name %></h4>
-<img class="flag_image" src="<%= @country.flag_img_url %>" alt="<%= "#{@country.name}_Flag"  %>">
-<div class="wikipedia_link"></div>
-<div class="google_link"></div>
+<h3>Holidays of <%= @country.name %></h3>
+<img class="flag_image_show" src="<%= @country.flag_img_url %>" alt="<%= "#{@country.name}_Flag"  %>">
+
+<div class="row">
+
+  <% @holidays.each do |holiday| %>
+
+  <div class="col-md-3 holiday_card">
+
+    <h5><%= holiday.name %></h5>
+    <p>Date Observed: <%= holiday.date_observed %></p>
+    <div class="wikipedia_link">Wikipedia</div>
+    <div class="google_link">Google</div>
+
+  </div>
+
+  <% end %>
+
+</div>
