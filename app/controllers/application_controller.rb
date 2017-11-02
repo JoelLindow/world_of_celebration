@@ -11,10 +11,10 @@ class ApplicationController < ActionController::Base
   end
 
   def require_user
-      unless current_user
-        flash[:notice] = "You ain't a user here, foo!"
-        redirect_to root_path
-      end
+    unless current_user
+      flash[:notice] = "You ain't a user here, foo!"
+      redirect_to root_path
+    end
 
   end
 
