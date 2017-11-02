@@ -1,9 +1,14 @@
 class SessionsController < ApplicationController
 
   def create
-    user = User.from_omniauth(requent.env['omniauth.auth'])
+    user = User.from_omniauth(request.env['omniauth.auth'])
+    # binding.pry
     session[:user_id] = user.id
-    redirect_to user_path(user.uid)
+    redirect_to countries_path
   end
 
+  def destroy
+    session.clear
+    redirect_to root_path
+  end
 end
