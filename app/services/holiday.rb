@@ -2,6 +2,7 @@ class Holiday
   attr_reader :name, :date_observed
 
   def initialize(holiday_json)
+    # binding.pry
     @raw_holiday    = holiday_json
     @name           = holiday_json.flatten[1][:name]
     @date           = holiday_json.flatten[1][:date] #reformat date
