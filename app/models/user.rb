@@ -8,11 +8,11 @@ class User < ApplicationRecord
       user.save
     elsif user.nil?
       user = User.create(
-                        uid: auth["uid"],
-                        name: auth["info"]["name"],
-                        email: auth["info"]["email"],
-                        image: auth["info"]["image"],
-                        token: auth["credentials"]["token"]
+                        uid: auth[:uid],
+                        name: auth[:info][:name],
+                        email: auth[:info][:email],
+                        image: auth[:info][:image],
+                        token: auth[:credentials][:token]
       )
     end
     user
