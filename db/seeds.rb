@@ -76,4 +76,3 @@ Country.create!(name: "Island of Réunion", abbreviation: "RE", flag_img_url: "h
 # Country.create!(name: "Venezuela", abbreviation: "VE", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-Venezuela.png")
 # Country.create!(name: "South Africa", abbreviation: "ZA", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-South-Africa.png")
 # Country.create!(name: "Zimbabe", abbreviation: "ZW", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-Zimbabwe.png")
-#END OF SEEDS
