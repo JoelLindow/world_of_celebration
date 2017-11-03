@@ -2,8 +2,10 @@ require 'rails_helper'
 
 describe "user visits /countries page" do
   it "user can see all countries" do
+    user = User.create(uid: "Uid", name: "Username", email: "UserEmail", image: "ImageUrl", token: "Token")
 
-    
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
     country1 = Country.create!(
       name: "United States of America",
       abbreviation: "US",
@@ -23,7 +25,7 @@ describe "user visits /countries page" do
 
     expect(page).to have_content("#{country1.name}")
     expect(page).to_not have_content("#{country2.name}")
-    expect(page).to have_css(".flag_image")
+    expect(page).to have_css(".flag_image_show")
     expect(page).to have_css(".wikipedia_link")
     expect(page).to have_css(".google_link")
   end

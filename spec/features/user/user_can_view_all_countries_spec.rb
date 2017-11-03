@@ -2,6 +2,10 @@ require 'rails_helper'
 
 describe "user visits /countries page" do
   it "user can see all countries" do
+    user = User.create(uid: "Uid", name: "Username", email: "UserEmail", image: "ImageUrl", token: "Token")
+
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
     country1 = Country.create!(
       name: "United States of America",
       abbreviation: "US",
