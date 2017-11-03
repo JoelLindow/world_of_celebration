@@ -15,7 +15,6 @@ RSpec.describe User, type: :model do
       }
     }
 
-    # binding.pry
     User.from_omniauth(auth)
     user = User.last
     expect(user.uid).to eq("25080717")
@@ -24,7 +23,4 @@ RSpec.describe User, type: :model do
     expect(user.image).to eq('https://avatars3.githubusercontent.com/u/25080717?s=460&v=4')
     expect(user.token).to eq(ENV['google_test'])
   end
-
-
-
 end

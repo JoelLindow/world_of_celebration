@@ -3,7 +3,6 @@ require 'rails_helper'
 describe "Holiday Service creates a single holiday object" do
   it "and poro has proper attributes" do
 
-
     holiday_data = [:"2016-01-01", [
                                   {:name=>"Holiday Name",
                                   :date=>"2016-01-01",
@@ -15,6 +14,7 @@ describe "Holiday Service creates a single holiday object" do
     poro = Holiday.new(holiday_data)
 
     expect(poro.name).to eq("Holiday Name")
+    expect(poro.date_observed).to eq("January 01")
 
   end
 end
