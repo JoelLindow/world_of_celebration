@@ -19,4 +19,12 @@ class Holiday
       "09" => "September", "10" => "October", "11" => "November", "12" => "December"
     }
   end
+
+  def google_search
+
+  end
+
+  def wikipedia_search
+    @name.split(" ").join("+")
+  end
 end

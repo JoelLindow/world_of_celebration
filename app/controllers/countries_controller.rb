@@ -15,6 +15,8 @@ class CountriesController < ApplicationController
     @holidays = json_holidays.map do |holiday|
       Holiday.new(holiday)
     end
+
+    @wiki_search = (@country.name.split(" ").join("+") + "+")
   end
 
 end
