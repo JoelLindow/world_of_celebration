@@ -16,7 +16,7 @@ Country.create!(name: "Brazil", abbreviation: "BR", flag_img_url: "http://cultur
 # Country.create!(name: "China", abbreviation: "CN", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-China.png")
 # Country.create!(name: "Colombia", abbreviation: "CO", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-Colombia.png")
 # Country.create!(name: "Costa Rica", abbreviation: "CR", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-Costa-Rica.png")
-Country.create!(name: "Cuba", abbreviation: "CU", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-Cuba.png")
+# Country.create!(name: "Cuba", abbreviation: "CU", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-Cuba.png")
 # Country.create!(name: "Czech Republic", abbreviation: "CZ", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-Czech-Republic.png")
 # Country.create!(name: "Germany", abbreviation: "DE", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-Germany.png")
 # Country.create!(name: "Denmark", abbreviation: "DK", flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-Denmark.png")

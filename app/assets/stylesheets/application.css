@@ -26,3 +26,34 @@ body {
   width: 200px;
   height: 130px;
 }
+.tiny_flag {
+  width: 60px;
+  height: 40px;
+}
+.flag_image_show {
+  /*max-width: 300px;*/
+  width: 100%;
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
+}
+.country_header {
+  background-color: darkgrey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.center_text {
+  text-align: center;
+}
+h3.holiday_title {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 40px;
+}
+h1.country_name_title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 60px;
+  color: white;
+}
