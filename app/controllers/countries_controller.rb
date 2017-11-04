@@ -16,7 +16,7 @@ class CountriesController < ApplicationController
       Holiday.new(holiday)
     end
 
-    @wiki_search = (@country.name.split(" ").join("+") + "+")
+    @web_search = (@country.name.split(" ").join("+") + "+")
   end
 
 end

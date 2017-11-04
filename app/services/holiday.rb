@@ -20,11 +20,7 @@ class Holiday
     }
   end
 
-  def google_search
-
-  end
-
-  def wikipedia_search
+  def web_search
     @name.split(" ").join("+")
   end
 end
