@@ -2,24 +2,14 @@
   <div class="col-md-2">
     <img class="flag_image_show" src="<%= @country.flag_img_url %>" alt="<%= "#{@country.name}_Flag"  %>">
   </div>
-
-  <!-- <div class="col-md-3">
-    <img class="flag_image_show" src="<%= @country.flag_img_url %>" alt="<%= "#{@country.name}_Flag"  %>">
-  </div> -->
-
   <div class="col-md-8">
     <h3 class="center_text holiday_title" >Holidays of</h3>
     <h1 class="center_text country_name_title"><%= @country.name %></h1>
   </div>
-
   <div class="col-md-2">
     <img class="flag_image_show" src="<%= @country.flag_img_url %>" alt="<%= "#{@country.name}_Flag"  %>">
   </div>
 </div>
-
-
-
-
 <div class="holiday_list">
   <table class="table">
     <thead>
@@ -27,7 +17,6 @@
         <th></th>
         <th>Date</th>
         <th>Holiday</th>
-        <!-- <th></th> -->
         <th>Wikipedia</th>
         <th>Google</th>
       </tr>
@@ -38,7 +27,6 @@
         <td><img class="tiny_flag" src="<%= @country.flag_img_url %>" alt="<%= "#{@country.name}_Flag" %>"></td>
         <td><h4><%= holiday.date_observed %></h4></td>
         <td><h4><%= holiday.name %></h4></td>
-        <!-- <td></td> -->
         <td>wikipedia_link</td>
         <td>google_link</td>
       </tr>

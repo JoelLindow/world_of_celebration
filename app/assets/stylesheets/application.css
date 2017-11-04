@@ -13,10 +13,11 @@
  *= require_tree .
  *= require_self
  */
-body {
-  margin-left: 3%;
-  margin-right: 3%;
+.yielded_content {
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 .holiday_card {
   border-color: grey;
   border-style: solid;
