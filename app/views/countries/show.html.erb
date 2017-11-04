@@ -25,10 +25,10 @@
       <% @holidays.each do |holiday| %>
       <tr>
         <td><img class="tiny_flag" src="<%= @country.flag_img_url %>" alt="<%= "#{@country.name}_Flag" %>"></td>
-        <td><h4><%= holiday.date_observed %></h4></td>
+        <td><h4 class="holiday_date"><%= holiday.date_observed %></h4></td>
         <td><h4><%= holiday.name %></h4></td>
-        <td>wikipedia_link</td>
-        <td>google_link</td>
+        <td class="wikipedia_link">wikipedia_link</td>
+        <td class="google_link">google_link</td>
       </tr>
       <% end %>
     </tbody>
