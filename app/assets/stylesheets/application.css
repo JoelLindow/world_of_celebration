@@ -57,3 +57,17 @@ h1.country_name_title {
   font-size: 60px;
   color: white;
 }
+.welcome_well {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: ;
+}
+.welcome_row {
+  background-image: url("http://bipsearch.com/wp-content/uploads/2017/08/Expat-assignments-adn-training.jpg");
+}
+.welcome_content {
+  margin-top: 80px;
+  margin-bottom: 150px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}

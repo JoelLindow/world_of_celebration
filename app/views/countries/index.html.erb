@@ -1,11 +1,11 @@
 <div class="row">
   <% @countries.each do |country| %>
-  <div class="country col-md-3">
+  <div class="country col-md-2">
     <div class="<%= "country_" + country.abbreviation %>">
       <img class="index_flag" src="<%= country.flag_img_url %>" alt="<%= "#{country.name} flag" %>">
-      <h4 class="name"><%= link_to country.name, country_path(country.id) %></h5>
-        <hr>    
-      </div>
+      <h4 class="name center_text"><%= link_to country.name, country_path(country.id) %></h4>
+      <hr>
     </div>
-    <% end %>
   </div>
+  <% end %>
+</div>
