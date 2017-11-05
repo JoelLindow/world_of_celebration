@@ -23,8 +23,12 @@
   border-width: thin;
 }
 .index_flag {
-  width: 200px;
-  height: 130px;
+  margin-top: 3px;
+  /*width: 200px;*/
+  /*height: 130px;*/
+  width: 100%;
+  height: 140px;
+  max-width: 220px;
 }
 .tiny_flag {
   width: 60px;
@@ -70,4 +74,7 @@ h1.country_name_title {
   margin-bottom: 150px;
   background-color: whitesmoke;
   border-radius: 5px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
