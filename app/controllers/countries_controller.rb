@@ -29,15 +29,29 @@ class HolidayPresenter
   end
 
   def base_api_call
-    @country = Country.find(@country_id)
-
-    response = Faraday.get("https://holidayapi.com/v1/holidays?key=#{ENV["HOLIDAY_API_KEY"]}&year=2016&country=#{@country.abbreviation}")
-
-    json_holidays = JSON.parse(response.body, symbolize_names: true)[:holidays]
-
-    @holidays = json_holidays.map do |holiday|
+    HolidayApiService.new.get_holidays(@country_id).map do |holiday|
       Holiday.new(holiday)
     end
-  end
 
+    # country = Country.find(@country_id)
+    #
+    # response = Faraday.get("https://holidayapi.com/v1/holidays?key=#{ENV["HOLIDAY_API_KEY"]}&year=2016&country=#{country.abbreviation}")
+    #
+    # json_holidays = JSON.parse(response.body, symbolize_names: true)[:holidays]
+    #
+    # @holidays = json_holidays.map do |holiday|
+    #   Holiday.new(holiday)
+    # end
+  end
+end
+
+class HolidayApiService
+
+  def get_holidays(country_id)
+    country = Country.find(country_id)
+
+    response = Faraday.get("https://holidayapi.com/v1/holidays?key=#{ENV["HOLIDAY_API_KEY"]}&year=2016&country=#{country.abbreviation}")
+
+    JSON.parse(response.body, symbolize_names: true)[:holidays]
+  end
 end
