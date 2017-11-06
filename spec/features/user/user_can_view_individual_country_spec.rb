@@ -26,7 +26,7 @@ describe "user visits /countries page" do
 
     expect(page).to have_content("#{country1.name}")
     expect(page).to_not have_content("#{country2.name}")
-    expect(page).to have_css(".flag_image_show")
+    expect(page).to have_css(".tiny_flag")
     expect(page).to have_css(".holiday_date")
     expect(page).to have_css(".wikipedia_link")
     expect(page).to have_css(".google_link")
