@@ -87,6 +87,7 @@ Country.create!(name: "Island of Réunion", abbreviation: "RE", flag_img_url: "h
 puts "Hand Rolled countries have been seeded with manually added flag URLs"
 
 
+
 puts ". : |       S E E D I N G   W A S   S U C C E S S F U L        | : ."
 puts ""
 puts "--------------------------------------------------------------------"
