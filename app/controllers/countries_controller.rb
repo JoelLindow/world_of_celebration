@@ -38,8 +38,6 @@ class HolidayPresenter
     @holidays = json_holidays.map do |holiday|
       Holiday.new(holiday)
     end
-
-    @holidays
   end
 
 end
