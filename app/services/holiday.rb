@@ -28,4 +28,12 @@ class Holiday
   def country_parse
     @country.name.split(" ").join("+")
   end
+
+  def wikipedia_search
+    "https://en.wikipedia.org/wiki/Special:Search?search=#{web_search}" 
+  end
+
+  def google_search
+
+  end
 end

@@ -26,7 +26,7 @@
         <td><img class="tiny_flag" src="<%= holiday.country.flag_img_url %>" alt="<%= "#{holiday.country.name}_Flag" %>"></td>
         <td><h4 class="holiday_date"><%= holiday.date_observed %></h4></td>
         <td><h4><%= holiday.name %></h4></td>
-        <td class="wikipedia_link"><%= link_to "Wikipedia Search", ("https://en.wikipedia.org/wiki/Special:Search?search=" + holiday.web_search) %></td>
+        <td class="wikipedia_link"><%= link_to "Wikipedia Search", holiday.wikipedia_search %></td>
         <td class="google_link"><%= link_to "Google Search", ("https://www.google.com/search?q=" + holiday.web_search) %></td>
       </tr>
       <% end %>
