@@ -85,6 +85,8 @@ Country.create!(name: "Northern Ireland", abbreviation: "GB-NIR", flag_img_url: 
 Country.create!(name: "Guatemala", abbreviation: "GB-SCT", flag_img_url: "http://www.geognos.com/api/en/countries/flag/GT.png")
 Country.create!(name: "Island of Réunion", abbreviation: "RE", flag_img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Proposed_flag_of_R%C3%A9union_%28VAR%29.svg/200px-Proposed_flag_of_R%C3%A9union_%28VAR%29.svg.png")
 puts "Hand Rolled countries have been seeded with manually added flag URLs"
+
+
 puts ". : |       S E E D I N G   W A S   S U C C E S S F U L        | : ."
 puts ""
 puts "--------------------------------------------------------------------"

@@ -1,18 +1,22 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+* vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
+
+td {
+  font-family: 'Julius Sans One', sans-serif;
+}
 .yielded_content {
   padding-left: 10px;
   padding-right: 10px;
@@ -24,8 +28,8 @@
 }
 .index_flag {
   margin-top: 3px;
-  max-height: 75px;
-  max-width: 150px;
+  height: 75px;
+  width: 100%;
 }
 .tiny_flag {
   width: 60px;
@@ -36,10 +40,10 @@
   border-width: thin;
 }
 .country_header {
-  background-color: darkgrey;
+  background-color: lightgrey;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 5px;
+  font-family: 'Satisfy', cursive;
 }
 .center_text {
   text-align: center;
@@ -47,14 +51,14 @@
 h3.holiday_title {
   margin-top: 5px;
   margin-bottom: 0px;
-  font-size: 40px;
+  font-size: 50px;
 }
-h1.country_name_title {
+/*h1.country_name_title {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 60px;
   color: white;
-}
+}*/
 .welcome_well {
   margin-left: 5%;
   margin-right: 5%;
@@ -63,11 +67,29 @@ h1.country_name_title {
   background-image: url("http://bipsearch.com/wp-content/uploads/2017/08/Expat-assignments-adn-training.jpg");
 }
 .welcome_content {
-  margin-top: 80px;
-  margin-bottom: 150px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-color: whitesmoke;
   border-radius: 5px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+header nav a.navbar-brand {
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+}
+h4.name.center_text {
+  font-family: 'Satisfy', cursive;
+  height: 40px;
+}
+h1.center_text.welcome_header {
+  font-family: 'Satisfy', cursive;
+}
+nav.navbar.navbar-default {
+  background-color: powderblue;
+  margin-bottom: 0px;
+}
+.cursive {
+    font-family: 'Satisfy', cursive;
 }

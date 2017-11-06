@@ -1,13 +1,12 @@
 <div class="row country_header">
   <div class="col-md-2">
-    <img class="flag_image_show" src="<%= @country.flag_img_url %>" alt="<%= "#{@country.name}_Flag"  %>">
   </div>
   <div class="col-md-8">
-    <h3 class="center_text holiday_title" >Holidays of</h3>
-    <h1 class="center_text country_name_title"><%= @country.name %></h1>
+    <h3 class="center_text holiday_title" ><%= "Holidays of #{@country.name}" %></h3>
+
+
   </div>
   <div class="col-md-2">
-    <img class="flag_image_show" src="<%= @country.flag_img_url %>" alt="<%= "#{@country.name}_Flag"  %>">
   </div>
 </div>
 <div class="holiday_list">
