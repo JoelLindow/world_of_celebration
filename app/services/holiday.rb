@@ -30,10 +30,10 @@ class Holiday
   end
 
   def wikipedia_search
-    "https://en.wikipedia.org/wiki/Special:Search?search=#{web_search}" 
+    "https://en.wikipedia.org/wiki/Special:Search?search=#{web_search}"
   end
 
   def google_search
-
+    "https://www.google.com/search?q=#{web_search}"
   end
 end
