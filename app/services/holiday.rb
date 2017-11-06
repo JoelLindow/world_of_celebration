@@ -1,10 +1,11 @@
 class Holiday
-  attr_reader :name, :date_observed
+  attr_reader :name, :date_observed, :country
 
-  def initialize(holiday_json)
+  def initialize(holiday_json, country)
     @raw_holiday    = holiday_json
     @name           = holiday_json.flatten[1][:name]
     @date_observed  = date_fixer
+    @country        = country
   end
 
   def date_fixer
@@ -21,6 +22,10 @@ class Holiday
   end
 
   def web_search
-    @name.split(" ").join("+")
+    (@name.split(" ").join("+")) + "+" + country_parse
+  end
+
+  def country_parse
+    @country.name.split(" ").join("+")
   end
 end
