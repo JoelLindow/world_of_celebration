@@ -2,12 +2,11 @@ class CountriesController < ApplicationController
   before_action :require_user
 
   def index
-    @countries = Country.all
+    @countries = Country.order(:name)
   end
 
   def show
+    @countries = Country.order(:name)
     @holidays = HolidayPresenter.new(params[:id]).base_api_call
-    # @country = Country.find(params[:id])
-    # @web_search = (@country.name.split(" ").join("+") + "+")
   end
 end

@@ -52,17 +52,20 @@ h3.holiday_title {
   margin-bottom: 0px;
   font-size: 50px;
 }
-.welcome_well {
-  margin-left: 5%;
-  margin-right: 5%;
+div .row.welcome_row {
+  background-image: url("https://images.unsplash.com/photo-1508519829430-40f7d3d161b4?auto=format&fit=crop&w=2850&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  height: 100%;
+  background-size: cover;
+  resize: both;
+  overflow: scroll;
 }
-.welcome_row {
-  background-image: url("http://bipsearch.com/wp-content/uploads/2017/08/Expat-assignments-adn-training.jpg");
+.welcome_header {
+  font-size: 50px;
 }
 .welcome_content {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  background-color: whitesmoke;
+  margin-top: 5%;
+  margin-bottom: 20%;
+  background-color: whitesmoke; opacity:0.9;;
   border-radius: 5px;
 }
 .card {
@@ -84,5 +87,27 @@ nav.navbar.navbar-default {
   margin-bottom: 0px;
 }
 .cursive {
-    font-family: 'Satisfy', cursive;
+  font-family: 'Satisfy', cursive;
+}
+.nice_font {
+  font-family: 'Julius Sans One', sans-serif;
+}
+.little_holiday_pic {
+  width: 100%;
+  border-radius: 5px;
+}
+.left_pane {
+  background-color: whitesmoke;
+}
+.country_little_link {
+  background-color: whitesmoke;
+}
+.wikipedia_link {
+  font-size: 20px;
+}
+.google_link {
+  font-size: 20px;
+}
+.holiday_name {
+  font-size: 28px;
 }

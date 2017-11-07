@@ -1,36 +1,46 @@
+<div class="col-md-10">
 <div class="row country_header">
-  <div class="col-md-2">
-  </div>
-  <div class="col-md-8">
-    <h3 class="center_text holiday_title" ><%= "Holidays of #{@holidays.first.country.name}" %></h3>
 
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+      <h3 class="center_text holiday_title" ><%= "Holidays of #{@holidays.first.country.name}" %></h3>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+  <div class="holiday_list">
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Date</th>
+          <th>Holiday</th>
+          <th>Wikipedia</th>
+          <th>Google</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @holidays.each do |holiday| %>
+        <tr>
+          <td><img class="tiny_flag" src="<%= holiday.country.flag_img_url %>" alt="<%= "#{holiday.country.name}_Flag" %>"></td>
+          <td><h4 class="holiday_date"><%= holiday.date_observed %></h4></td>
+          <td class="holiday_name"><%= holiday.name %></td>
+          <td class="wikipedia_link"><%= link_to "Wikipedia", holiday.wikipedia_search %></td>
+          <td class="google_link"><%= link_to "Google", holiday.google_search %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 
-  </div>
-  <div class="col-md-2">
-  </div>
 </div>
-<div class="holiday_list">
-  <table class="table">
-    <thead>
-      <tr>
-        <th></th>
-        <th>Date</th>
-        <th>Holiday</th>
-        <th>Wikipedia</th>
-        <th>Google</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @holidays.each do |holiday| %>
-      <tr>
-        <td><img class="tiny_flag" src="<%= holiday.country.flag_img_url %>" alt="<%= "#{holiday.country.name}_Flag" %>"></td>
-        <td><h4 class="holiday_date"><%= holiday.date_observed %></h4></td>
-        <td><h4><%= holiday.name %></h4></td>
-        <td class="wikipedia_link"><%= link_to "Wikipedia Search", holiday.wikipedia_search %></td>
-        <td class="google_link"><%= link_to "Google Search", holiday.google_search %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
+<div class="col-md-2">
+  <h3 class="cursive center_text">More Places to</h3>
+  <h2 class="cursive center_text">Explore</h2>
+  <hr>
+  <% @countries.each do |country| %>
+  <h5 class="nice_font country_little_link center_text"><%= link_to country.name, country_path(country)  %></h5>
 
+  <% end %>
 </div>
