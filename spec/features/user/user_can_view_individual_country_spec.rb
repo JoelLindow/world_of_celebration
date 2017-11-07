@@ -25,10 +25,12 @@ describe "user visits /countries page" do
     expect(current_path).to eq("/countries/#{country1.id}")
 
     expect(page).to have_content("#{country1.name}")
-    expect(page).to_not have_content("#{country2.name}")
+    # expect(page).to_not have_content("#{country2.name}")
     expect(page).to have_css(".tiny_flag")
     expect(page).to have_css(".holiday_date")
     expect(page).to have_css(".wikipedia_link")
     expect(page).to have_css(".google_link")
+    expect(page).to have_css(".fav_button")
+
   end
 end

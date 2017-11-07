@@ -23,11 +23,9 @@ describe "user can pick a favorite holiday" do
       visit country_path(country1)
 
       expect(page).to have_css(".fav_button")
-      expect(page).to have_content("Add Favorite")
-      save_and_open_page
+      expect(page).to have_button("Favorite")
 
-
-      click_on("Add Favorite")
+      first('.add_fav').click
 
       visit favorites_path
 
