@@ -1,6 +1,5 @@
 <div class="col-md-10">
-<div class="row country_header">
-
+  <div class="row country_header">
     <div class="col-md-2">
     </div>
     <div class="col-md-8">
@@ -33,7 +32,6 @@
       </tbody>
     </table>
   </div>
-
 </div>
 <div class="col-md-2">
   <h3 class="cursive center_text">More Places to</h3>
@@ -41,6 +39,5 @@
   <hr>
   <% @countries.each do |country| %>
   <h5 class="nice_font country_little_link center_text"><%= link_to country.name, country_path(country)  %></h5>
-
   <% end %>
 </div>
