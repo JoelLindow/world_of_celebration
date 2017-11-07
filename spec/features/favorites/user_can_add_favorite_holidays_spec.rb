@@ -2,23 +2,16 @@ require 'rails_helper'
 
 describe "user can pick a favorite holiday" do
   it "and see it in their favorites view" do
-    country1 = Country.create!(
-      name: "United States of America",
-      abbreviation: "US",
-      flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png"
-    )
+    VCR.use_cassette("user_can_add_favorite_holiday") do
 
-    user = User.create(uid: "Uid", name: "Username", email: "UserEmail", image: "ImageUrl", token: "Token")
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+      country1 = Country.create!(
+        name: "United States of America",
+        abbreviation: "US",
+        flag_img_url: "https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png"
+      )
 
-    holiday = Holiday.new([:"2016-01-01", [
-      {:name=>"Holiday Name",
-        :date=>"2016-01-01",
-        :observed=>"2016-01-01",
-        :public=>true
-      }
-      ]], country1)
-
+      user = User.create(uid: "Uid", name: "Username", email: "UserEmail", image: "ImageUrl", token: "Token")
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
       visit country_path(country1)
 
@@ -36,9 +29,6 @@ describe "user can pick a favorite holiday" do
       expect(page).to have_css(".holiday_date")
       expect(page).to have_css(".wikipedia_link")
       expect(page).to have_css(".google_link")
-
-
-
-
     end
   end
+end

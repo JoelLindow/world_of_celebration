@@ -3,7 +3,7 @@ class FavoritesController < ApplicationController
   def create
     favorite = Favorite.new(favorite_params)
     if favorite.save
-      binding.pry
+      # binding.pry
       flash[:alert] = "Favorite Successfully Added"
       redirect_back(fallback_location: countries_path)
     else
