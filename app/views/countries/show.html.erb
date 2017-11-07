@@ -27,6 +27,15 @@
           <td class="holiday_name"><%= holiday.name %></td>
           <td class="wikipedia_link"><%= link_to "Wikipedia", holiday.wikipedia_search %></td>
           <td class="google_link"><%= link_to "Google", holiday.google_search %></td>
+          <% form_tag :favorites, {action: "create"} do %>
+          <%= hidden_field_tag :name, holiday.name %>
+          <%= hidden_field_tag :date_observed, holiday.date_observed %>
+          <%= hidden_field_tag :wikipedia_search, holiday.wikipedia_search %>
+          <%= hidden_field_tag :google_search, holiday.google_search %>
+
+          <% end %>
+
+          <td class="fav_button"><%= link_to "Add Favorite", method: :post %></td>
         </tr>
         <% end %>
       </tbody>
