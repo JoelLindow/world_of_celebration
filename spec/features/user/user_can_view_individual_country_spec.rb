@@ -28,6 +28,7 @@ describe "user visits /countries page" do
       expect(page).to have_css(".wikipedia_link")
       expect(page).to have_css(".google_link")
       expect(page).to have_css(".fav_button")
+      
     end
   end
 end
