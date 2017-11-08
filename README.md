@@ -1,6 +1,10 @@
 # About World of Celebration:
-World of Celebration is an application that allows a user to explore the holidays celebrated in over 80 countries, territories and islands around the world. It allows you to add some of your favorite holidays to a personal collection. It also allows you to see what information Wikipedia might have about these holidays. In many cases there are no known Wikipedia entries for a holiday, in which case we encourage the user to follow the optional google search and learn about the holiday enough to potentially start a Wikipedia entry that brings awareness to a holiday and the cultures that celebrate it. Through this application I hope to create a way for people to identify underrepresented celebrations and help to remove the blindspots on Wikipedia where these celebrations and cultures are not being fully represented.
+World of Celebration is an application that allows a user to explore the holidays celebrated in over 80 countries, territories and islands around the world. It allows you to add some of your favorite holidays to a personal collection. It also allows you to see what information Wikipedia might have about these holidays. In many cases there are no known Wikipedia entries for a holiday, in which case we encourage the user to follow the optional google search and learn about the holiday enough to potentially start a Wikipedia entry that brings awareness to a holiday and the cultures that celebrate it.
+
+Through this application I hope to create a way for people to identify underrepresented celebrations and help to remove the blindspots on Wikipedia where these celebrations and cultures are not being fully represented.
+
 To view the current application in production please visit the this application in it's hosted form at Heroku by visiting https://serene-gorge-35862.herokuapp.com/
+
 Thanks for visiting! If you're a developer keep reading to learn about exploring this application on your local machine.
 
 # How to get this application up and running locally:
