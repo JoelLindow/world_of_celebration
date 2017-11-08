@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Holiday Service creates a single holiday object" do
-  it "and poro has proper attributes" do
+  it "and holiday object knows it's holiday name" do
     country = Country.create!(
       name: "United States",
       abbreviation: "US",
@@ -119,7 +119,7 @@ describe "Holiday Service creates a single holiday object" do
         ]]
 
         poro = Holiday.new(holiday_data, country)
-        
+
         expect(poro.google_search).to eq("https://www.google.com/search?q=Holiday+Name+United+States")
     end
   end
