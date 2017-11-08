@@ -34,7 +34,7 @@ These commands will create your postgresql database as well as seed the database
 
 
   - Visit the Google Developer section and sign up for a new `GOOGLE_ID:` & `GOOGLE_SECRET:`. You will add these strings to your `/world_of_celebration/config/application.yml`
-    - For instruction on how to get these necessary pieces, please refer to THIS DOCUMENTATION (LINK TO GOOGLE OAUTH SETUP) to learn how to navigate the Google Developer site and get your own ID and Secret.
+    - For instruction on how to get these necessary pieces, please refer to THIS DOCUMENTATION (https://console.developers.google.com/) to learn how to navigate the Google Developer site and get your own ID and Secret.
 
   - Visit https://holidayapi.com and sign up for your own API key. Add this key to the `application.yml` file to the right of the `HOLIDAY_API_KEY:`
 
