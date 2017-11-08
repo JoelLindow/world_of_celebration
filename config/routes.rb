@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     root to: 'welcome#index'
 
     resources :countries, only: [:index, :show]
+    resources :favorites, only: [:index, :create, :destroy]
+
 
     delete "/logout", to: 'sessions#destroy'
 

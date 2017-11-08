@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :favorites
 
   def self.from_omniauth(auth)
     user = User.where(uid: auth["uid"]).first

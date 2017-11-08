@@ -16,6 +16,7 @@
       <li>
         <% if current_user %>
         <li><a href="/countries">All Countries</a></li>
+        <li><a href="/favorites">Favorites</a></li>
         <li><%= link_to "Logout", logout_path, method: 'delete', class: "button btn-warning" %></li>
         <li><a></a></li>
         <% else %>

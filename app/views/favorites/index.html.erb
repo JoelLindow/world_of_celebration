@@ -3,7 +3,7 @@
     <div class="col-md-2">
     </div>
     <div class="col-md-8">
-      <h3 class="center_text holiday_title" ><%= "Holidays of #{@holidays.first.country.name}" %></h3>
+      <h3 class="center_text holiday_title" >Your Favorite Holidays</h3>
     </div>
     <div class="col-md-2">
     </div>
@@ -17,28 +17,17 @@
           <th>Holiday</th>
           <th>Wikipedia</th>
           <th>Google</th>
-          <th>Fav</th>
         </tr>
       </thead>
       <tbody>
         <% @holidays.each do |holiday| %>
         <tr>
-          <td><img class="tiny_flag" src="<%= holiday.country.flag_img_url %>" alt="<%= "#{holiday.country.name}_Flag" %>"></td>
+          <td><img class="tiny_flag" src="<%= holiday.country_flag_url %>" alt="<%= "#{holiday.country_name}_Flag" %>"></td>
           <td><h4 class="holiday_date"><%= holiday.date_observed %></h4></td>
           <td class="holiday_name"><%= holiday.name %></td>
           <td class="wikipedia_link"><%= link_to "Wikipedia", holiday.wikipedia_search %></td>
           <td class="google_link"><%= link_to "Google", holiday.google_search %></td>
-          <%= form_tag :favorites, {action: "create"} do %>
-          <%= hidden_field_tag :name, holiday.name %>
-          <%= hidden_field_tag :date_observed, holiday.date_observed %>
-          <%= hidden_field_tag :wikipedia_search, holiday.wikipedia_search %>
-          <%= hidden_field_tag :google_search, holiday.google_search %>
-          <%= hidden_field_tag :country_name, holiday.country.name %>
-          <%= hidden_field_tag :country_flag_url, holiday.country.flag_img_url %>
-          <%= hidden_field_tag :user_id, current_user.id %>
-          <td class="fav_button"><%= submit_tag "Favorite", class: "add_fav" %></td>
-          <% end %>
-
+          <td class="delete_favorite"><%= link_to "Remove", favorite_path(id: holiday.id, user_id: current_user.id), method: :delete, class: "rem_fav" %></td>
         </tr>
         <% end %>
       </tbody>
