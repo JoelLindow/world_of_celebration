@@ -1,20 +1,19 @@
 class FavoritesController < ApplicationController
 
   def index
-    
+    @holidays = Favorite.where(user_id: current_user.id)
+    @countries = Country.order(:name)
+    # binding.pry
   end
 
   def create
     favorite = Favorite.new(favorite_params)
     if favorite.save
-      # binding.pry
       flash[:alert] = "Favorite Successfully Added"
-      redirect_back(fallback_location: countries_path)
     else
       flash[:alert] = "Favorite Not Added"
-      redirect_back(fallback_location: countries_path)
     end
-
+    redirect_back(fallback_location: countries_path)
   end
 
   private

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "user can pick a favorite holiday" do
-  it "and see it in their favorites view" do
+  it "and add it as well as delete it" do
     VCR.use_cassette("user_can_add_favorite_holiday") do
 
       country1 = Country.create!(
@@ -22,13 +22,20 @@ describe "user can pick a favorite holiday" do
 
       visit favorites_path
 
-      expect(page).to have_content("#{country1.name}")
       expect(page).to have_css(".tiny_flag")
       expect(page).to have_css(".holiday_name")
-      expect(page).to have_content(holiday.name)
+      expect(page).to have_content("Last Day of Kwanzaa")
       expect(page).to have_css(".holiday_date")
+      expect(page).to have_content("January 01")
       expect(page).to have_css(".wikipedia_link")
       expect(page).to have_css(".google_link")
+      expect(page).to have_css(".delete_favorite")
+
+      first('.rem_fav').click
+
+      expect(current_path).to eq('/favorites')
+
+      expect(page).to_not have_content("Last Day of Kwanzaa")
     end
   end
 end
