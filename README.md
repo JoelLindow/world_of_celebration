@@ -40,18 +40,18 @@ These commands will create your postgresql database as well as seed the database
 
 * How to run the test suite:
   - To run the testing suite make sure you are in the root folder (`world_of_celebration/`) and run the command `rspec` to execute the RSpec testing suite.
-  ![Run RSpec Testing Suite Example](blob:https://imgur.com/7d62c49e-7043-864a-ad3e-f75812a290f2)
+  ![Run RSpec Testing Suite Example](https://i.imgur.com/21AbU4m.gif)
 
 
 * Running the application on your local machine:
   - Run the `rails s` command to launch your local server for this application
-  ![Run Server Example](blob:https://imgur.com/0841e95f-fce8-a24a-9e49-dd0201497e6e)
+  ![Run Server Example](https://i.imgur.com/CrdAAdg.gif)
 
   - Once your server is running, you will want to open your web browser (Firefox or Chrome preferred) and navigate to the url `http://localhost:3000` where you will see the splash page and be asked to click 'Sign in with Google' to use the application and begin exploring.
-  ![Use Site Example](blob:https://imgur.com/83d6e7d6-b171-e243-b922-8cd18eae5479)
+  ![Use Site Example](https://i.imgur.com/UGPB0ZG.gif)
 
   - As a user, adding favorites to your collection is simple. Just visit a country of your choice and click the `Favorite` button for a holiday. You will then have this holiday added to your favorites dashboard to view and explore in the future.
-  ![Adding Favorites Example](blob:https://imgur.com/439efd49-5532-7d41-8bba-cdcdaa1c5bea)
+  ![Adding Favorites Example](https://i.imgur.com/RLdAtOc.gif)
 
 
 # How to Contribute
