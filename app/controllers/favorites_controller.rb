@@ -16,6 +16,12 @@ class FavoritesController < ApplicationController
     redirect_back(fallback_location: countries_path)
   end
 
+  def destroy
+    
+  end
+
+
+
   private
 
   def favorite_params

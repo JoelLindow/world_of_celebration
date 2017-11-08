@@ -27,6 +27,7 @@
           <td class="holiday_name"><%= holiday.name %></td>
           <td class="wikipedia_link"><%= link_to "Wikipedia", holiday.wikipedia_search %></td>
           <td class="google_link"><%= link_to "Google", holiday.google_search %></td>
+          <td class="delete_favorite"><%= link_to "Remove", favorite_path(id: holiday.id, user_id: current_user.id), method: :delete, class: "rem_fav" %></td>
         </tr>
         <% end %>
       </tbody>
