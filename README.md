@@ -60,6 +60,8 @@ These commands will create your postgresql database as well as seed the database
 
 # How to Contribute
   - Have a great idea on how to make this application even more meaningful?  would welcome your input and contribution. Please fork this repository and once you've pushed up a contribution please make a Pull Request against my Master Branch. Please include good commit descriptions as well good communication in your pull request message. I will review your contribution and merge or respond accordingly.
+  - If you are curious about the worlflow or stories already covered up to this point, check out the trello board at: https://trello.com/b/mxbQHOkD/world-of-celebration-project
+  - If you would like to contribute to the workflow management or creating "stories" and "cards" let me know, and you can be added to the trello board.
 
 # Thank you
 Thank you for taking the time to view my application. I hope you find it useful, enjoyable and educational. I appreciate your time. Have a wonderful day!
